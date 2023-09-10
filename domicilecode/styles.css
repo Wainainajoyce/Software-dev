@@ -1,0 +1,438 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6DDD8; /* Example color, you can adjust as needed */
+}
+
+header {
+    background-color:#E6DDD8; /* Background color of the header */
+    padding: 10px 0; /* Add some padding for better appearance */
+}
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Style the navbar */
+.navbar {
+    display: flex; /* Use flexbox to arrange menu items horizontally */
+    justify-content: flex-end; /* Push menu items to the right side of the header */
+    list-style-type: none; /* Remove default list bullets */
+    margin: 0; /* Reset margin to remove extra spacing */
+    padding: 0; /* Reset padding to remove extra spacing */
+}
+
+/* Style the list items (navbar items) */
+.navbar li {
+    margin-left: 20px;
+    display: inline; /* Add some spacing between menu items */
+}
+
+/* Style the links (navbar links) */
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #000; /* Text color for links */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff9900; /* Change color on hover */
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5px;
+    margin-bottom: 50px; 
+}
+
+.text-content {
+    width: 45%; 
+    padding: 10pxpx;
+    font-size: 18px;
+}
+
+.text-content h2 {
+    font-size: 28px; 
+    font-weight: bold; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    line-height: 3; 
+    margin-bottom: 20px; 
+}
+
+.image-content {
+    width: 45%;
+    padding: 20px;
+}
+
+.image-content img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Signup and Signin Button Styles */
+button {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Centered Buttons Section */
+.cta-section {
+    text-align: center; 
+    padding: 50px 0; 
+}
+
+.centered-buttons p {
+    margin-top: 20px; 
+}
+/* Style the "Sign Up" link */
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f0f; /* Change color on hover */
+}
+
+/* Style the "Sign In" link with a different background color */
+.cta-btn.secondary {
+    background-color: #00f;
+}
+
+.cta-btn.secondary:hover {
+    background-color: #ff00ff; /* Change color on hover */
+}
+
+/* Style the text between the buttons */
+.cta-text {
+    margin: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #E6DDD8;
+    line-height: 2; 
+}
+
+footer div {
+    width: 23%; 
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+
+.profile-section {
+    width: 100%;
+    margin: 0 auto; 
+    padding: 30px 0; 
+    padding-left: 50px;
+}
+
+.profile-form-section {
+    display: flex;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+    
+}
+
+.form-container {
+    width: 80%; 
+}
+
+.buttons-container {
+    width: 20%; /* Buttons take up 20% of the space */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    align-items: flex-start; /* Align buttons to the start (left) */
+    display: block; /* Make the container a block-level element */
+    text-align: center; /* Center-align the buttons */
+    margin-top: 10px; /* Add some spacing between the form and buttons */
+}
+
+/* Style for the buttons */
+.primary-btn {
+    margin-right: 10px; 
+}
+
+/* form input, form textarea, form button {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100%;
+    border-color: #007BFF;
+} */
+
+form input, form textarea, form button {
+    width: 80%; /* Make form elements take up full width of the form container */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100%;
+    border-color: #007BFF;
+    /* padding-left: 3000px; */
+}
+/* Style for the form group */
+.form-container{
+    margin-bottom: 20px; /* Add spacing between form groups */
+}
+
+/* Style for labels */
+label {
+    display: block; 
+    font-weight: bold; 
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+/* Add styles for other input types here */
+textarea,
+input[type="password"] {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; 
+}
+
+.primary-btn {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 16px; 
+    color: #999; 
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/* Style for the login container */
+.login-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+/* Style for the text above the form */
+.login-container p {
+    margin-bottom: 20px; 
+    font-weight: bold; 
+}
+
+/* Style for the form */
+.login-form {
+    text-align: center; 
+}
+
+/* Style for the form groups */
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Style for the labels */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Style for the small input fields */
+.small-input {
+    width: 200px; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style for the buttons container */
+.buttons-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style for the buttons */
+.primary-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the login button */
+.login-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the "Does not have a Domicile account yet?" paragraph */
+.login-container p:last-child {
+    margin-top: 20px; /* Add margin to separate it from the button */
+}
+
+/* Style for the signup button */
+.signup-btn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #1e7e34; /* Darker green color on hover */
+}
+.rooms-container {
+    font-size: 30px; /* Increase the font size as desired */
+    font-weight: bold; /* Make it bold if desired */
+    font-family: "Arial", sans-serif; /* Change the font family as desired */
+    color: #333; /* Change the text color as desired */
+}
+/* Style for the image container */
+.image-container {
+    display: flex; /* Display the images in a row */
+    justify-content: space-between; /* Space evenly between images */
+}
+
+/* Style for each image */
+.image-container div {
+    flex: 0 0 calc(20% - 10px); /* Adjust width as needed (20% for 5 images in a row) */
+    margin-right: 10px; /* Add spacing between images */
+}
+
+/* Style for images */
+.image-container img {
+    max-width: 100%; /* Make sure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the text below each image */
+.image-text {
+    text-align: center; /* Center-align the text */
+    margin-top: 5px; /* Add spacing between image and text */
+    font-weight: bold; /* Make the text bold if desired */
+}
+ /* Style for the table */
+ table {
+    width: 80%; /* Adjust the table width as needed */
+    margin: 20px auto; /* Center the table on the page */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for table cells (td) and table header (th) */
+td, th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Style for table header (th) */
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style for alternate rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+

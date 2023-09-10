@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landlord Dashboard</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>DOMICILE</h1>
+        <nav class="navbar">
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="account.html">Register</a></li>
+            <li><a href="loginlandlord.html">Login as Landlord</a></li>
+            <li><a href="loginroomate.html">Login as Roomate</a></li>
+        </ul>
+        </nav>
+    </header>
+    <section class="profile-section">
+        <h2>Property Listing Information</h2>
+       <div class="profile-form-section">
+        <div class="form-container">
+            <form action="#" method="POST">
+                <label for="name">Property Name:</label>
+                <input type="text" name="name" id="name" required>
+            
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" required>
+    
+                <label for="rooms">Rooms Available:</label>
+                <input type="text" name="rooms" id="rooms" required>
+
+            
+                <label for="address">Home Address:</label>
+                <textarea name="address" id="address" placeholder="Home Address" rows="3"></textarea>
+            
+                <label for="cost">Cost Per Room:</label>
+                <input type="text" name="cost" id="cost" required>
+
+
+                <label for="facilities">Facilities:</label>
+                <input type="text" name="facilities" id="facilities" required>
+
+                <label for="houserules">House Rules:</label>
+                <input type="text" name="houserules" id="houserules" required>
+
+                <button id="property-info" class="primary-btn">Update Property Information</button>
+
+            </form>
+        </div>
+       </div>
+    </section>
+</body>
+</html>
